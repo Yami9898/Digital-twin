@@ -166,7 +166,7 @@ Ce dépôt a vocation à **présenter** le jumeau numérique. Les recettes et le
 
 ## Publication (en cours)
 
-Article associé : *Development of a modular multi-layer digital twin for ethylene oxide sterilization systems based on physical and empirical modeling.
+Article associé : *Development of a modular multi-layer digital twin for ethylene oxide sterilization systems based on physical and empirical modeling.*
 
 ## Auteur
 
