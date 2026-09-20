@@ -1,5 +1,7 @@
 # Jumeau numérique d'un stérilisateur à l'oxyde d'éthylène (EtO)
 
+🇬🇧 [English version](README.en.md)
+
 > Projet de fin d'études — Génie Biomédical
 > Soutenu le 22 juin 2026.
 
