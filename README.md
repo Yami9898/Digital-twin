@@ -162,9 +162,9 @@ Ce dépôt a vocation à **présenter** le jumeau numérique. Les recettes et le
   encore validées sur les rapports réels.
 - Perspective : analyse automatique des écarts pour détecter et anticiper les dérives de la machine.
 
-## Publication
+## Publication (en cours)
 
-Article associé : *Development of a modular multi-layer digital twin for ethylene oxide sterilization systems based on physical and empirical modeling* (IAPGOŚ, 2026).
+Article associé : *Development of a modular multi-layer digital twin for ethylene oxide sterilization systems based on physical and empirical modeling.
 
 ## Auteur
 
