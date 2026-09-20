@@ -1,0 +1,65 @@
+{
+  "_comment": [
+    "Seuils d'acceptation pour la classification des écarts simulé vs réel.",
+    "Un écart |sim - réel| inférieur à ok_threshold = OK (vert)",
+    "Entre ok_threshold et warn_threshold = WARN (orange)",
+    "Au-delà de warn_threshold = FAIL (rouge)",
+    "",
+    "Ces seuils sont des valeurs initiales à ajuster en fonction de la",
+    "précision attendue du modèle et des tolérances métier."
+  ],
+
+  "version": "1.0",
+
+  "thresholds": {
+    "PT111": {
+      "unit": "mbar",
+      "ok_threshold": 25.0,
+      "warn_threshold": 80.0,
+      "comment": "Pression chambre — précision typique manomètre industriel ±10 mbar"
+    },
+    "PT112": {
+      "unit": "mbar",
+      "ok_threshold": 25.0,
+      "warn_threshold": 80.0,
+      "comment": "Pression jacket — même classe de précision que PT111"
+    },
+    "TT111": {
+      "unit": "°C",
+      "ok_threshold": 2.0,
+      "warn_threshold": 4.0,
+      "comment": "Température chambre — précision PT100 ±0.5°C"
+    },
+    "TT112": {
+      "unit": "°C",
+      "ok_threshold": 1.5,
+      "warn_threshold": 3.0,
+      "comment": "Jacket thermorégulé — faible tolérance attendue"
+    },
+    "TT191": {
+      "unit": "°C",
+      "ok_threshold": 2.5,
+      "warn_threshold": 5.0,
+      "comment": "Sonde charge — plus tolérante car dynamique plus lente"
+    },
+    "RHT121": {
+      "unit": "%RH",
+      "ok_threshold": 6.0,
+      "warn_threshold": 12.0,
+      "comment": "Capteur HR — sensible, précision typique ±3 %RH"
+    },
+    "GT121": {
+      "unit": "kg",
+      "ok_threshold": 0.3,
+      "warn_threshold": 0.8,
+      "comment": "Masse EtO injectée — mesurée par bilan pression"
+    }
+  },
+
+  "duration_thresholds": {
+    "_comment": "Tolérance sur l'écart de durée totale du cycle",
+    "ok_ratio": 0.10,
+    "warn_ratio": 0.25,
+    "unit": "fraction (10% = 0.10)"
+  }
+}

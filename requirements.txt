@@ -1,0 +1,10 @@
+PySide6
+matplotlib
+numpy
+scipy
+pdfplumber
+reportlab
+mysql-connector-python
+# OCR optionnel (PDF scannés uniquement) — nécessite aussi tesseract-ocr
+# pytesseract
+# pillow

@@ -1,0 +1,195 @@
+{
+  "_comment": [
+    "Mapping des noms de phases du PDF réel vers des catégories génériques.",
+    "Sert à deux choses :",
+    "  1. Trouver la phase d'ancrage pour le recalage temporel (anchor_categories)",
+    "  2. Catégoriser chaque point réel pour le tableau / le filtrage",
+    "",
+    "PAS utilisé pour faire correspondre 1-à-1 simulé vs réel — la comparaison",
+    "se fait par interpolation temporelle (voir time_aligner.py)."
+  ],
+
+  "version": "1.0",
+
+  "_anchor_help": [
+    "anchor_categories : liste ORDONNÉE des catégories à essayer pour le",
+    "recalage temporel. On prend la PREMIÈRE qui existe à la fois dans le",
+    "simulé et dans le réel."
+  ],
+  "anchor_categories": [
+    "vide_initial",
+    "preconditionnement"
+  ],
+
+  "_filter_help": [
+    "filter_categories : catégories à exclure de la comparaison.",
+    "Typiquement les phases préparatoires (gonflage joints) et les attentes",
+    "humaines (validation opérateur)."
+  ],
+  "filter_categories": [
+    "gonflage",
+    "attente_operateur"
+  ],
+
+  "_simulated_help": [
+    "simulated_phase_categories : associe chaque catégorie au(x) nom(s) de",
+    "phase utilisé(s) par SterilizationModel. Sert UNIQUEMENT à localiser",
+    "la phase d'ancrage dans le simulé."
+  ],
+  "simulated_phase_categories": {
+    "preconditionnement": ["Préconditionnement"],
+    "vide_initial": ["Vide initial"],
+    "test_fuite_bas": ["Test de fuite bas"],
+    "test_fuite_haut": [
+      "Test fuite haut - injection azote",
+      "Test fuite haut - test",
+      "Test fuite haut - vide"
+    ],
+    "dilution_azote": [
+      "Dilution azote"
+    ],
+    "stabilisation": [
+      "Stabilisation humidité"
+    ],
+    "injection_vapeur": [
+      "Injection vapeur"
+    ],
+    "injection_gaz": [
+      "Injection gaz 1 - injection",
+      "Injection gaz 1 - stabilisation",
+      "Injection gaz 2 - injection",
+      "Injection gaz 2 - stabilisation",
+      "Injection gaz 3 - injection",
+      "Injection gaz 3 - stabilisation",
+      "Injection gaz 4 - injection",
+      "Injection gaz 4 - stabilisation"
+    ],
+    "exposition": ["Exposition EtO"],
+    "rincage_azote": [
+      "Rinçage azote 1 - injection azote",
+      "Rinçage azote 1 - stabilisation injection",
+      "Rinçage azote 1 - vide",
+      "Rinçage azote 1 - stabilisation vide",
+      "Rinçage azote 2 - injection azote",
+      "Rinçage azote 2 - stabilisation injection",
+      "Rinçage azote 2 - vide",
+      "Rinçage azote 2 - stabilisation vide",
+      "Rinçage azote 3 - injection azote",
+      "Rinçage azote 3 - stabilisation injection",
+      "Rinçage azote 3 - vide",
+      "Rinçage azote 3 - stabilisation vide"
+    ],
+    "rincage_air": [
+      "Rinçage air 1 - casse vide air",
+      "Rinçage air 1 - stabilisation casse vide",
+      "Rinçage air 1 - vide",
+      "Rinçage air 1 - stabilisation vide",
+      "Rinçage air 2 - casse vide air",
+      "Rinçage air 2 - stabilisation casse vide",
+      "Rinçage air 2 - vide",
+      "Rinçage air 2 - stabilisation vide",
+      "Rinçage air 3 - casse vide air",
+      "Rinçage air 3 - stabilisation casse vide",
+      "Rinçage air 3 - vide",
+      "Rinçage air 3 - stabilisation vide"
+    ],
+    "rincage_additionnel": [
+      "Rinçage additionnel 1 - air vacuum break",
+      "Rinçage additionnel 1 - stabilisation casse vide",
+      "Rinçage additionnel 1 - vacuum",
+      "Rinçage additionnel 1 - stabilisation vide"
+    ],
+    "casse_vide_final": ["Casse vide air finale"]
+  },
+
+  "_real_help": [
+    "real_phase_categories : associe chaque catégorie aux noms tels qu'ils",
+    "apparaissent dans la colonne 'Etapes' du PDF (FR ou EN).",
+    "Si une phase nouvelle apparaît dans un PDF, l'ajouter ici."
+  ],
+  "real_phase_categories": {
+    "gonflage": [
+      "Gonflage joints",
+      "Inflating gaskets"
+    ],
+    "preconditionnement": [
+      "Preconditioning",
+      "Preconditionnement"
+    ],
+    "vide_initial": [
+      "Vide initiale",
+      "Initial vacuum"
+    ],
+    "test_fuite_bas": [
+      "Test de fuite bas",
+      "Low leak test"
+    ],
+    "test_fuite_haut": [
+      "Test de fuite haut : stabilisation",
+      "Test de fuite haut : vide",
+      "High leak test : stabilization",
+      "High leak test : vacuum"
+    ],
+    "stabilisation": [
+      "Stabilization",
+      "Stabilisation + Prechauffage pompe a vide",
+      "Humidity stabilisation + preheating vacuum pump"
+    ],
+    "dilution_azote": [
+      "Nitrogen dilution : injection",
+      "Nitrogen dilution : vacuum"
+    ],
+    "dec_steam": [
+      "DEC : steam injection"
+    ],
+    "dec_vacuum": [
+      "DEC : vacuum"
+    ],
+    "dec_nitrogen": [
+      "DEC : nitrogen injection"
+    ],
+    "injection_vapeur": [
+      "Steam injection",
+      "Injection vapeur"
+    ],
+    "injection_gaz": [
+      "Premiere injection gaz : EtO",
+      "Deuxieme injection gaz : azote",
+      "Troisieme injection gaz : EtO",
+      "Quatrieme injection gaz : azote",
+      "First gas injection : stabilization",
+      "Second gas injection : stabilization",
+      "Third gas injection : stabilization",
+      "Fourth gas injection : stabilization"
+    ],
+    "exposition": [
+      "Exposition EtO",
+      "EtO exposure",
+      "EtO exposure + Preheating vacuum pump"
+    ],
+    "rincage_azote": [
+      "Annulation : rincage azote : stabilisation injection",
+      "Annulation : rincage azote : stabilisation vide",
+      "Nitrogen rinsing : injection stabilization",
+      "Nitrogen rinsing : vacuum stabilization"
+    ],
+    "rincage_air": [
+      "Annulation : rincage air : stabilisation casse vide",
+      "Annulation : rincage air : stabilisation vide",
+      "Air rinsing : vacuum break stabilization",
+      "Air rinsing : vacuum stabilization"
+    ],
+    "rincage_additionnel": [
+      "Additional rinsing : vacuum",
+      "Canceling : Additional rinsing : vacuum"
+    ],
+    "casse_vide_final": [
+      "Annulation : Casse vide air final",
+      "Final air vacuum break"
+    ],
+    "attente_operateur": [
+      "Attente validation operateur",
+      "Operator validation pending"
+    ]
+  }
+}

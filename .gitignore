@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+eto_env/
+.venv/
+venv/
+
+# Build (PyInstaller)
+build/
+dist/
+
+# OS / éditeur
+.DS_Store
+.idea/
+.vscode/
+
+# Secrets locaux
+.env
+
+# Rapports de cycles réels (confidentiels)
+Ste_*.pdf

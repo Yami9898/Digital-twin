@@ -1,0 +1,81 @@
+{
+  "id": "calibration_001",
+  "created_at": "2026-06-02T03:54:07",
+  "label": "Calibration 001",
+  "cycles_used": [
+    {
+      "pdf": "cycle_B.pdf",
+      "recipe_id": 2,
+      "role": "calibration"
+    },
+    {
+      "pdf": "cycle_C.pdf",
+      "recipe_id": 8,
+      "role": "calibration"
+    },
+    {
+      "pdf": "cycle_D.pdf",
+      "recipe_id": 6,
+      "role": "calibration"
+    },
+    {
+      "pdf": "cycle_E.pdf",
+      "recipe_id": 1,
+      "role": "calibration"
+    }
+  ],
+  "coefficients": {
+    "K112_TRACK": 0.020526496014419006,
+    "K112_PRESSURE": 0.012102814118491567,
+    "VAPOR_RELAX_EXPO": 0.02358407694456624,
+    "VAPOR_RELAX_RINSE": 0.2747430815064539,
+    "VAPOR_RELAX_STAB": 0.02676274749786116,
+    "VAPOR_RELAX_GAS_STAB": 0.05041576813402208,
+    "EXPO_RH_EQ": 47.52023160374335,
+    "EXPO_DRY_RH_EQ": 47.36186606928679,
+    "RINSE_BREAK_RH_EQ": 10.174999999999997,
+    "RINSE_VAC_RH_EQ": 28.350367401545963,
+    "PREEXPO_RH_EQ": 50.259525237117955,
+    "GAS_INJECTION_RH_EQ": 26.605808342382986,
+    "GAS_STAB_RH_EQ": 54.97444180753111,
+    "LOAD_DESORPTION_RATE": 0.2910607284126894,
+    "LOAD_ABSORPTION_RATE": 0.004170951324213848,
+    "RINSE_RH_FLOOR": 21.262363543161293,
+    "STEAM_TARGET_RELAX": 0.42,
+    "STEAM_TO_VAPOR_GAIN": 0.06742412286220309,
+    "RATE_VACUUM_FROM_ATM": 69.0,
+    "RATE_VACUUM_MID": 55.0,
+    "RATE_STEAM": 16.0,
+    "RATE_N2_BREAK_SLOW": 52.0,
+    "RATE_N2_RINSE": 45.0
+  },
+  "metrics": {
+    "calibration": {
+      "TT111": {
+        "rmse": 11.612914482648685,
+        "mae": 8.779648151543238,
+        "bias": 7.093337678308976,
+        "n": 141
+      },
+      "TT112": {
+        "rmse": 2.950767370923652,
+        "mae": 2.3876254638977743,
+        "bias": -0.3826756524307102,
+        "n": 141
+      },
+      "TT191": {
+        "rmse": 18.866746154799497,
+        "mae": 17.73748489121333,
+        "bias": 17.574592332921295,
+        "n": 141
+      },
+      "RHT121": {
+        "rmse": 11.678532447876552,
+        "mae": 8.119034331681418,
+        "bias": -3.6966888927810584,
+        "n": 141
+      }
+    }
+  },
+  "parent": "default"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "calibration_002",
+  "created_at": "2026-06-02T03:56:33",
+  "label": "Calibration 002",
+  "cycles_used": [
+    {
+      "pdf": "cycle_A.pdf",
+      "recipe_id": 5,
+      "role": "calibration"
+    }
+  ],
+  "coefficients": {
+    "K112_TRACK": 0.03967419533032927,
+    "K112_PRESSURE": 0.003193287072312763,
+    "VAPOR_RELAX_EXPO": 0.016887227545931256,
+    "VAPOR_RELAX_RINSE": 0.28664040409406694,
+    "VAPOR_RELAX_STAB": 0.21550894523825515,
+    "VAPOR_RELAX_GAS_STAB": 0.15351363524858172,
+    "EXPO_RH_EQ": 74.775,
+    "EXPO_DRY_RH_EQ": 39.94793842976838,
+    "RINSE_BREAK_RH_EQ": 44.95899961202756,
+    "RINSE_VAC_RH_EQ": 34.530804943889464,
+    "PREEXPO_RH_EQ": 69.36228504911115,
+    "GAS_INJECTION_RH_EQ": 12.985590351334304,
+    "GAS_STAB_RH_EQ": 24.339486526857023,
+    "LOAD_DESORPTION_RATE": 0.14554531728258546,
+    "LOAD_ABSORPTION_RATE": 0.07956487631886722,
+    "RINSE_RH_FLOOR": 23.977684609510753,
+    "STEAM_TARGET_RELAX": 0.42,
+    "STEAM_TO_VAPOR_GAIN": 0.05009276780977559,
+    "RATE_VACUUM_FROM_ATM": 69.0,
+    "RATE_VACUUM_MID": 55.0,
+    "RATE_STEAM": 16.0,
+    "RATE_N2_BREAK_SLOW": 52.0,
+    "RATE_N2_RINSE": 45.0
+  },
+  "metrics": {
+    "calibration": {
+      "TT111": {
+        "rmse": 1.3326239252521865,
+        "mae": 0.9903025096080358,
+        "bias": 0.32336940376459594,
+        "n": 28
+      },
+      "TT112": {
+        "rmse": 1.1793355999684658,
+        "mae": 0.9765154276312702,
+        "bias": 0.5603606751729152,
+        "n": 28
+      },
+      "TT191": {
+        "rmse": 19.018348960596548,
+        "mae": 18.138867208160708,
+        "bias": 18.138867208160708,
+        "n": 28
+      },
+      "RHT121": {
+        "rmse": 11.918925171552225,
+        "mae": 6.916052148620023,
+        "bias": 0.7618172426063055,
+        "n": 28
+      }
+    }
+  },
+  "parent": "calibration_001"
+}

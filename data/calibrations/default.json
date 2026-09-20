@@ -1,0 +1,33 @@
+{
+  "id": "default",
+  "created_at": "2026-06-02T03:30:46",
+  "label": "Valeurs par défaut",
+  "cycles_used": [],
+  "coefficients": {
+    "K112_TRACK": 0.045,
+    "K112_PRESSURE": 0.0043,
+    "VAPOR_RELAX_EXPO": 0.05,
+    "VAPOR_RELAX_RINSE": 0.06,
+    "VAPOR_RELAX_STAB": 0.1,
+    "VAPOR_RELAX_GAS_STAB": 0.06,
+    "EXPO_RH_EQ": 51.4,
+    "EXPO_DRY_RH_EQ": 49.6,
+    "RINSE_BREAK_RH_EQ": 26.0,
+    "RINSE_VAC_RH_EQ": 24.0,
+    "PREEXPO_RH_EQ": 54.0,
+    "GAS_INJECTION_RH_EQ": 35.0,
+    "GAS_STAB_RH_EQ": 34.0,
+    "LOAD_DESORPTION_RATE": 0.075,
+    "LOAD_ABSORPTION_RATE": 0.018,
+    "RINSE_RH_FLOOR": 22.0,
+    "STEAM_TARGET_RELAX": 0.42,
+    "STEAM_TO_VAPOR_GAIN": 0.15,
+    "RATE_VACUUM_FROM_ATM": 69.0,
+    "RATE_VACUUM_MID": 55.0,
+    "RATE_STEAM": 16.0,
+    "RATE_N2_BREAK_SLOW": 52.0,
+    "RATE_N2_RINSE": 45.0
+  },
+  "metrics": {},
+  "parent": null
+}
